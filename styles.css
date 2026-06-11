@@ -17,6 +17,7 @@
 }
 
 html {
+  font-size: 17px;
   scroll-behavior: smooth;
 }
 
@@ -210,7 +211,7 @@ img {
   overflow: hidden;
   padding: 132px 28px 64px;
   color: var(--white);
-  background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=80");
+  background-image: url("assets/field-land-use.jpg");
   background-position: center;
   background-size: cover;
 }
