@@ -1,0 +1,4 @@
+interface:
+  display_name: "利益基準の広告運用"
+  short_description: "広告利益から許容単価、成果観測、広告構造、増額条件を設計します"
+  default_prompt: "$profit-based-ad-operations を使って、広告運用を利益、有効なコンバージョン、商材分割の観点から診断してください。"
