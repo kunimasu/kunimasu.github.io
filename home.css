@@ -338,12 +338,6 @@
   background: var(--home-white);
 }
 
-.home-diagnosis {
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-  align-items: center;
-  border: 2px solid var(--home-accent);
-}
-
 .home-case {
   overflow: hidden;
 }
