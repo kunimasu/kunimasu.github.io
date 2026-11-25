@@ -3,91 +3,283 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>株式会社Kunimasu</title>
-    <meta name="description" content="IT・IoT・生成AIの開発、畑サポートセンターの運営、天然石の物販。株式会社Kunimasuの事業と会社情報をご紹介します。">
-    <meta property="og:title" content="株式会社Kunimasu">
-    <meta property="og:description" content="IT、IoT、生成AI。畑サポートセンター、天然石。いろいろ、やっています。">
+    <title>株式会社Kunimasu｜生成AI活用支援・業務システム・IoT開発</title>
+    <meta name="description" content="株式会社Kunimasuは、中小企業の業務改善を支援します。業務の整理から、生成AIの導入、業務システム・IoTの開発と運用までご相談いただけます。">
+    <meta property="og:title" content="株式会社Kunimasu｜生成AI活用支援・業務システム・IoT開発">
+    <meta property="og:description" content="中小企業の業務を、生成AIとシステム開発で軽くする。業務の整理から開発と運用まで支援します。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kunimasu.com/">
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://kunimasu.com/">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css?v=20261030-1">
+    <link rel="stylesheet" href="styles.css?v=20261112-1">
+    <link rel="stylesheet" href="home.css">
+    <script src="home-contact.js" defer></script>
   </head>
-  <body id="top">
+  <body class="home-page" id="top">
     <a class="skip-link" href="#main">本文へ移動</a>
-    <div class="page">
-      <header class="site-header">
-        <a class="brand" href="#top">株式会社Kunimasu</a>
-        <nav aria-label="メインメニュー">
-          <a href="#business">事業</a>
-          <a href="/ai-diagnosis/">AI活用・業務改善診断</a>
+    <header class="home-header">
+      <div class="home-shell home-header-inner">
+        <a class="home-brand" href="#top">株式会社Kunimasu</a>
+        <nav class="home-nav" aria-label="メインメニュー">
+          <a href="#service">サービス</a>
+          <a href="#diagnosis">AI活用診断</a>
+          <a href="#works">実績</a>
           <a href="#company">会社概要</a>
-          <a href="#contact">お問い合わせ</a>
+          <a href="#other">その他の事業</a>
         </nav>
-      </header>
+        <a class="home-button home-button-small" href="#contact">業務改善を相談する</a>
+      </div>
+    </header>
 
-      <main id="main">
-        <section class="hero" aria-labelledby="hero-title">
-          <h1 id="hero-title">Kunimasu</h1>
-          <p>IT、IoT、生成AI。<br>畑サポートセンター、天然石。<br>いろいろ、やっています。</p>
-        </section>
-
-        <section class="section" id="business" aria-labelledby="business-title">
-          <h2 id="business-title">事業</h2>
-          <div class="business-list">
-            <article class="business-row">
-              <h3>IT</h3>
-              <p>Webシステム・業務システムの企画と開発。</p>
-            </article>
-            <article class="business-row">
-              <h3>IoT</h3>
-              <p>機器とネットワークをつなぐ技術を使った、アプリケーションやシステムの開発。</p>
-            </article>
-            <article class="business-row">
-              <h3>生成AI</h3>
-              <div>
-                <p>文章の生成や情報の整理などを行うAIの活用支援と、業務に組み込む仕組みの開発。</p>
-                <a class="service-url" href="/ai-diagnosis/">AI活用・業務改善診断のご案内</a>
-              </div>
-            </article>
-            <article class="business-row">
-              <h3><a href="https://hatakesupport.co.jp/">畑サポートセンター</a></h3>
-              <div>
-                <p>畑や遊休地の整備と活用を支援する自社サービス。</p>
-                <a class="service-url" href="https://hatakesupport.co.jp/">hatakesupport.co.jp</a>
-              </div>
-            </article>
-            <article class="business-row">
-              <h3>天然石</h3>
-              <p>天然石の物販。</p>
-            </article>
+    <main id="main" tabindex="-1">
+      <section class="home-hero" aria-labelledby="hero-title">
+        <div class="home-shell home-hero-inner">
+          <div class="home-hero-copy">
+            <p class="home-eyebrow">生成AI活用支援 ／ システム開発 ／ IoT</p>
+            <h1 id="hero-title">
+              <span>中小企業の業務を、</span>
+              <span>生成AIとシステム開発で</span>
+              <span>軽くする。</span>
+            </h1>
+            <p>日々の業務と費用を整理し、どこから改善するかを一緒に決めます。必要に応じて、生成AIの導入からシステムの開発・運用まで支援します。</p>
+            <div class="home-actions">
+              <a class="home-button" href="#diagnosis">AI活用・業務改善診断を見る</a>
+              <a class="home-button home-button-secondary" href="#works">実績を見る</a>
+            </div>
           </div>
-        </section>
+          <img class="home-hero-image" src="assets/business-development-meeting.jpg" width="1200" height="800" alt="" fetchpriority="high">
+        </div>
+      </section>
 
-        <section class="section" id="company" aria-labelledby="company-title">
-          <h2 id="company-title">会社概要</h2>
-          <dl class="company-list">
-            <div><dt>会社名</dt><dd>株式会社Kunimasu</dd></div>
-            <div><dt>代表者</dt><dd>代表取締役 國舛 等志</dd></div>
-            <div><dt>所在地</dt><dd>東京都港区浜松町2丁目2番15号<br>浜松町ダイヤビル2F</dd></div>
-            <div><dt>事業内容</dt><dd>システムの企画・開発、生成AIの活用支援<br>畑サポートセンターの運営<br>天然石の物販</dd></div>
+      <nav class="home-business-bar" aria-label="畑サポートセンター・天然石の窓口">
+        <div class="home-shell home-business-bar-inner">
+          <p>畑サポートセンター・天然石の件でお越しの方</p>
+          <a class="home-pill" href="https://hatakesupport.co.jp/">畑サポートセンター</a>
+          <a class="home-pill" href="#stone">天然石</a>
+        </div>
+      </nav>
+
+      <section class="home-shell home-section" aria-labelledby="concerns-title">
+        <h2 id="concerns-title">こんなお悩みありませんか？</h2>
+        <ul class="home-grid home-concerns" role="list">
+          <li>Excelや紙での転記・集計が多く、手が回らない。</li>
+          <li>生成AIを試したが、どの業務に使えばよいか判断できない。</li>
+          <li>現場の機器からデータを集めて、監視や判断に使いたい。</li>
+          <li>既存のシステムが古く、改修できる相談先を探している。</li>
+        </ul>
+      </section>
+
+      <section class="home-shell home-section" id="business" aria-labelledby="service">
+        <h2 id="service">提供サービス</h2>
+        <div class="home-grid home-grid-three">
+          <article class="home-card home-service">
+            <h3>生成AIの導入・業務組み込み</h3>
+            <p>文書検索、文章作成、情報整理など、日々の業務に生成AIを組み込みます。人が確認する箇所や運用手順も設計します。</p>
+            <p class="home-example"><strong>活用例</strong> 社内資料をもとに質問に答える仕組み</p>
+            <a class="home-text-link" href="#work-ai">生成AIの実績を見る</a>
+          </article>
+          <article class="home-card home-service">
+            <h3>業務システム・Web開発</h3>
+            <p>業務の流れを整理し、既存システムの改修や新規開発を企画から支援します。導入後の改善にも対応します。</p>
+            <p class="home-example"><strong>開発例</strong> 建材調達、会議室予約、部品見積もり管理</p>
+            <a class="home-text-link" href="#work-web">業務システムの実績を見る</a>
+          </article>
+          <article class="home-card home-service">
+            <h3>IoTシステム開発</h3>
+            <p>現場の機器をネットワークにつなぎ、データを収集・表示したり、アプリから機器を操作したりする仕組みを開発します。</p>
+            <p class="home-example"><strong>開発例</strong> 電力監視、センサー連携、機器制御</p>
+            <a class="home-text-link" href="#work-iot">IoTの実績を見る</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-shell home-section" id="diagnosis" aria-labelledby="diagnosis-title">
+        <div class="home-panel home-diagnosis">
+          <div class="home-panel-copy">
+            <h2 id="diagnosis-title">AI活用・業務改善診断</h2>
+            <p>担当者への聞き取りと業務資料をもとに、作業の流れ、工数、費用を整理します。既存ツールの活用、生成AI、専用システムの開発などを比べ、改善の着手順を提案します。</p>
+            <p>対象業務と確認する範囲を伺ったうえで、診断内容と費用をご提案します。</p>
+          </div>
+          <div class="home-diagnosis-aside">
+            <div class="home-diagnosis-output">
+              <h3>診断でお渡しする資料の例</h3>
+              <ul>
+                <li>業務一覧表・業務フロー図</li>
+                <li>課題分析・改善提案書</li>
+                <li>改善策の比較表・着手順</li>
+              </ul>
+            </div>
+            <a class="home-button" href="ai-diagnosis/">診断の詳細・相談窓口へ</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-shell home-section" id="works" aria-labelledby="works-title">
+        <div class="home-section-heading">
+          <h2 id="works-title">導入・開発実績</h2>
+          <p>代表が過去に参画した案件を含みます。</p>
+        </div>
+        <div class="home-grid home-grid-three">
+          <article class="home-card home-case" id="work-ai">
+            <div class="home-case-heading">
+              <p>生成AI</p>
+              <h3>文書検索と業務の自動化</h3>
+            </div>
+            <div class="home-case-content">
+              <p>2023年から、関連する文書を検索して回答を生成する検索・対話システムや、複数の処理をつなぐ業務手順の開発に取り組んできました。</p>
+              <p>リアルタイム音声認識を使うアシスタントや文章作成支援の開発経験もあります。</p>
+            </div>
+          </article>
+          <article class="home-card home-case" id="work-web">
+            <div class="home-case-heading">
+              <p>業務システム・Web</p>
+              <h3>建材調達・設備予約のシステム</h3>
+            </div>
+            <div class="home-case-content">
+              <p>建材調達のデジタル化サービス、会議室予約システム、部品見積もり管理システムなどの開発に携わりました。</p>
+              <p>金融プラットフォームやメタバース向けのコンテンツ管理システムの開発経験もあります。</p>
+            </div>
+          </article>
+          <article class="home-card home-case" id="work-iot">
+            <div class="home-case-heading">
+              <p>IoT・機器連携</p>
+              <h3>電力監視・センサー連携</h3>
+            </div>
+            <div class="home-case-content">
+              <p>電力監視システム、位置測定システム、粒子センサー連携など、機器のデータを扱う開発に携わりました。</p>
+              <p>医療用の装着型機器、心拍測定機器、スマートシューズと連携する開発経験もあります。</p>
+            </div>
+          </article>
+        </div>
+        <details class="home-card home-more">
+          <summary>そのほかの機器・アプリ開発実績</summary>
+          <ul>
+            <li>省電力Bluetooth（BLE）機器と連携するアプリ</li>
+            <li>エントランスの解錠システム</li>
+            <li>エアコン制御アプリ</li>
+            <li>香り噴霧装置</li>
+          </ul>
+        </details>
+      </section>
+
+      <section class="home-shell home-section" aria-labelledby="process-title">
+        <h2 id="process-title">ご相談から運用までの流れ</h2>
+        <ol class="home-grid home-steps" role="list">
+          <li class="home-card"><h3>ご相談</h3><p>困っている業務と改善したい点を伺います。</p></li>
+          <li class="home-card"><h3>診断</h3><p>業務の手順、工数、費用を整理します。</p></li>
+          <li class="home-card"><h3>ご提案</h3><p>取り組む施策と費用、進め方をご提示します。</p></li>
+          <li class="home-card"><h3>開発・検証</h3><p>対象を絞って作り、現場で試します。</p></li>
+          <li class="home-card"><h3>運用・改善</h3><p>使い始めたあとの課題に対応します。</p></li>
+        </ol>
+        <div class="home-card home-estimate">
+          <h3>費用について</h3>
+          <p>診断は対象業務と調査範囲、開発・運用は必要な機能と支援範囲を確認し、個別にお見積りします。</p>
+        </div>
+      </section>
+
+      <section class="home-shell home-section home-profile" aria-labelledby="profile-title">
+        <img class="home-profile-image" src="assets/representative-kunimasu.png" width="1024" height="1024" alt="代表取締役 國舛 等志" loading="lazy" decoding="async">
+        <div class="home-profile-copy">
+          <h2 id="profile-title">代表メッセージ</h2>
+          <p>現場でどんな作業に時間がかかり、誰がどこで判断しているのか。まずそこを整理し、必要な技術を選びます。エンジニアとしての開発経験と、自社サービスを運営してきた経験を生かし、導入後も現場で使い続けられる仕組みをつくります。</p>
+          <p class="home-profile-name">代表取締役　<strong>國舛 等志</strong></p>
+          <p>家電ベンチャーの創業期にエンジニアとして参画。その後、独立、事業の立ち上げ、会社の売却を経験しました。Web・モバイル・デスクトップアプリ、ブロックチェーン、IoT機器の開発や、中小企業の生成AI導入・研修に携わってきました。</p>
+          <h3>主な経歴</h3>
+          <dl class="home-career">
+            <div><dt>2009年</dt><dd>家電ベンチャーの創業期にサーバー側の開発を担当。</dd></div>
+            <div><dt>2011年</dt><dd>省電力Bluetooth（BLE）製品を個人で開発し、日本・米国・欧州で展開。</dd></div>
+            <div><dt>2013年</dt><dd>開発チームを率い、日米共同プロジェクトを担当。</dd></div>
+            <div><dt>2017年</dt><dd>1社目を設立し、IoT機器開発支援・システム開発事業を展開。</dd></div>
+            <div><dt>2021年</dt><dd>株式会社Kunimasuを設立し、AI・IoT・Web技術を活用した事業を開始。</dd></div>
           </dl>
-        </section>
+        </div>
+      </section>
 
-        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-          <h2 id="contact-title">お問い合わせ</h2>
-          <div>
-            <a class="contact-email" href="mailto:info@kunimasu.com">info@kunimasu.com</a>
-            <p>事業や開発に関するご相談は、メールでお寄せください。</p>
+      <section class="home-shell home-section" id="other" aria-labelledby="other-title">
+        <h2 class="home-small-title" id="other-title">その他の事業</h2>
+        <div class="home-grid home-grid-two">
+          <article class="home-card home-other home-other-with-image">
+            <img src="assets/field-land-use.jpg" width="1800" height="1013" alt="" loading="lazy" decoding="async">
+            <div>
+              <h3>畑サポートセンター</h3>
+              <p>畑や遊休地の整備と、その後の活用を支援します。神奈川県内で30件以上の相談・対応実績があります。</p>
+              <a class="home-text-link" href="https://hatakesupport.co.jp/">畑サポートセンターの公式サイト</a>
+            </div>
+          </article>
+          <article class="home-card home-other" id="stone">
+            <div>
+              <h3>天然石</h3>
+              <p>天然石の物販を行っています。</p>
+              <a class="home-text-link" href="contact/">天然石のお問い合わせ</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-shell home-section" id="company" aria-labelledby="company-title">
+        <h2 class="home-small-title" id="company-title">会社概要</h2>
+        <dl class="home-card home-company">
+          <div><dt>会社名</dt><dd>株式会社Kunimasu</dd></div>
+          <div><dt>代表者</dt><dd>代表取締役 國舛 等志</dd></div>
+          <div><dt>所在地</dt><dd>東京都港区浜松町2丁目2番15号 浜松町ダイヤビル2F</dd></div>
+          <div><dt>事業内容</dt><dd>生成AIの活用支援、業務システム・Web・IoTの企画と開発、畑サポートセンターの運営、天然石の物販</dd></div>
+        </dl>
+      </section>
+
+      <section class="home-shell home-section home-contact" id="contact" aria-labelledby="contact-title">
+        <div class="home-panel home-contact-panel">
+          <div class="home-panel-copy">
+            <h2 id="contact-title">お問い合わせ</h2>
+            <p>AI活用・業務改善診断、システム開発やIoTについてご相談いただけます。</p>
+            <a class="home-text-link home-email" href="mailto:info@kunimasu.com">info@kunimasu.com</a>
+            <ul class="home-contact-routes">
+              <li><a href="https://hatakesupport.co.jp/">畑・遊休地のご相談</a></li>
+              <li><a href="contact/">天然石・その他のお問い合わせ</a></li>
+            </ul>
           </div>
-        </section>
-      </main>
+          <form class="home-contact-form" id="contact-form" action="mailto:info@kunimasu.com" hidden>
+            <label>ご用件
+              <select name="topic">
+                <option>AI活用・業務改善診断の相談</option>
+                <option>業務システム・Web開発の相談</option>
+                <option>IoTシステム開発の相談</option>
+                <option>その他のお問い合わせ</option>
+              </select>
+            </label>
+            <label>会社名
+              <input name="organization" autocomplete="organization" maxlength="100">
+            </label>
+            <label>お名前（必須）
+              <input name="name" autocomplete="name" maxlength="100" required>
+            </label>
+            <label>返信先メールアドレス
+              <input name="email" type="email" autocomplete="email" maxlength="254">
+            </label>
+            <label>ご相談内容（必須）
+              <textarea name="message" rows="4" maxlength="800" required></textarea>
+            </label>
+            <p class="home-form-note" id="contact-note">入力内容をお使いのメールアプリの下書きに入れます。送信はメールアプリから行ってください。</p>
+            <button class="home-button" type="submit" aria-describedby="contact-note">メールの下書きを作成</button>
+            <p class="home-form-note" id="contact-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
 
-      <footer class="site-footer">
+    <footer class="home-footer">
+      <div class="home-shell home-footer-inner">
+        <div>
+          <p>株式会社Kunimasu</p>
+          <p>東京都港区浜松町2丁目2番15号 浜松町ダイヤビル2F</p>
+        </div>
+        <nav aria-label="フッターメニュー">
+          <a href="company/">会社概要</a>
+          <a href="contact/">お問い合わせ</a>
+          <a href="#top">ページ上部へ</a>
+        </nav>
         <small>© 2026 Kunimasu Inc.</small>
-        <a href="#top">ページ上部へ</a>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
