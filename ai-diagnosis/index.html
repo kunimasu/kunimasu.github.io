@@ -1,134 +1,159 @@
 <!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI活用・業務改善診断｜株式会社Kunimasu</title>
-  <meta name="description" content="業務一覧もフローもないなら、まずそこから。AIを使う前も使った後も、業務の実態を整理し、効果・総費用・安全性を診断します。必要な実装・研修まで株式会社Kunimasuが支援します。">
-  <meta property="og:title" content="AI活用・業務改善診断｜株式会社Kunimasu">
-  <meta property="og:description" content="業務が見えていないなら、AIの前にやることがあります。業務の整理から、AI活用の効果・費用・安全性の診断、必要な実装・研修まで支援します。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kunimasu.com/ai-diagnosis/">
-  <meta property="og:locale" content="ja_JP">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="canonical" href="https://kunimasu.com/ai-diagnosis/">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <style>
-  #kunimasu-monochrome {
-    color-scheme:light;
-    background:#fff;
-    color:#111;
-    font-family:"Times New Roman","Yu Mincho","Hiragino Mincho ProN",serif;
-    font-size:16px;
-    line-height:1.7;
-    padding:24px 28px 30px;
-    box-sizing:border-box;
-    width:100%;
-  }
-  #kunimasu-monochrome * { box-sizing:border-box; }
-  #kunimasu-monochrome a,
-  #kunimasu-monochrome a:visited { color:#111; text-decoration:underline; text-underline-offset:3px; }
-  #kunimasu-monochrome a:focus-visible,
-  #kunimasu-monochrome summary:focus-visible { outline:2px solid #111; outline-offset:4px; }
-  #kunimasu-monochrome header { display:flex; flex-wrap:wrap; gap:4px 24px; align-items:baseline; }
-  #kunimasu-monochrome header strong { font-size:19px; }
-  #kunimasu-monochrome header span { font-size:14px; }
-  #kunimasu-monochrome h1 { font-size:32px; line-height:1.5; margin:32px 0 18px; font-weight:700; text-wrap:balance; }
-  #kunimasu-monochrome h2 { font-size:22px; line-height:1.55; margin:22px 0 12px; font-weight:700; }
-  #kunimasu-monochrome h3 { font-size:18px; margin:20px 0 10px; font-weight:700; }
-  #kunimasu-monochrome p { margin:12px 0; }
-  #kunimasu-monochrome ul,
-  #kunimasu-monochrome ol { padding-left:1.5em; margin:12px 0; }
-  #kunimasu-monochrome li { margin:3px 0; }
-  #kunimasu-monochrome hr { border:0; border-top:1px solid #111; margin:24px 0; }
-  #kunimasu-monochrome details { margin:12px 0; }
-  #kunimasu-monochrome summary { font-weight:700; }
-  #kunimasu-monochrome .km-point > summary { font-size:20px; line-height:1.55; }
-  #kunimasu-monochrome .km-point { margin:20px 0; }
-  #kunimasu-monochrome .km-request { margin-top:18px; }
-  #kunimasu-monochrome .km-request a {
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-height:44px;
-    padding:8px 16px;
-    border:1px solid #111;
-    border-radius:4px;
-    background:#111;
-    color:#fff;
-    font-weight:700;
-    text-align:center;
-    text-decoration:none;
-  }
-  #kunimasu-monochrome .km-contact { margin-top:26px; padding-top:16px; border-top:1px solid #111; }
-  #kunimasu-monochrome .km-contact strong { display:block; margin-bottom:8px; }
-  @media(max-width:480px) {
-    #kunimasu-monochrome { padding:20px 16px 26px; }
-    #kunimasu-monochrome h1 { font-size:26px; margin-top:25px; }
-    #kunimasu-monochrome h1 br { display:none; }
-    #kunimasu-monochrome h2 { font-size:21px; }
-    #kunimasu-monochrome .km-point > summary { font-size:19px; }
-    #kunimasu-monochrome summary { min-height:44px; padding-block:8px; }
-  }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI活用・業務改善診断｜株式会社Kunimasu</title>
+    <meta name="description" content="業務を棚卸しし、採用・外注・AI活用などを御社の事業に合う基準で比較します。自社で進めるか、専門家に任せるかを判断できる資料を納品します。">
+    <meta property="og:title" content="AI活用・業務改善診断｜株式会社Kunimasu">
+    <meta property="og:description" content="御社にとって正しい物差しを手に入れる。業務を棚卸しし、改善策と進める体制を経営として判断できる資料を納品します。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kunimasu.com/ai-diagnosis/">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://kunimasu.com/ai-diagnosis/">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles.css?v=20261112-1">
+    <link rel="stylesheet" href="../home.css?v=20261125-mobile">
+    <link rel="stylesheet" href="diagnosis.css">
+    <script src="../home-menu.js" defer></script>
+  </head>
+  <body class="home-page diagnosis-page" id="top">
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="home-header">
+      <div class="home-shell home-header-inner">
+        <a class="home-brand" href="../" aria-label="株式会社Kunimasu"><span class="home-brand-company">株式会社</span>Kunimasu</a>
+        <button class="home-menu-button" type="button" aria-controls="home-nav" aria-expanded="false" hidden>メニュー</button>
+        <nav class="home-nav" id="home-nav" aria-label="メインメニュー">
+          <a href="../#service">サービス</a>
+          <a href="./" aria-current="page">診断の詳細</a>
+          <a href="../#works">実績</a>
+          <a href="../#company">会社概要</a>
+          <a href="../#other">その他の事業</a>
+        </nav>
+        <a class="home-button home-button-small home-header-contact" href="../#contact">お問い合わせ</a>
+      </div>
+    </header>
 
-  html { color-scheme:light; background:#fff; }
-  body { margin:0; background:#fff; color:#111; }
-  #kunimasu-monochrome { max-width:792px; margin-inline:auto; }
-  #kunimasu-monochrome header strong a { text-decoration:none; }
-  #kunimasu-monochrome a { overflow-wrap:anywhere; }
-</style>
-</head>
-<body>
-<main id="kunimasu-monochrome" aria-label="Kunimasu AI活用・業務改善診断">
-  <header><strong><a href="/">Kunimasu</a></strong><span>AI活用・業務改善診断</span></header>
-  <h1>業務が見えていないなら、<br>AIの前にやることがあります。</h1>
-  <p>誰が、何を、どの手順で行っているか。<br>どこに時間と費用がかかっているか。</p>
-  <p>それが分からないままでは、AIも、採用も、外注も、必要な投資か判断できません。</p>
-  <p><strong>業務一覧もフローもないなら、まずそこから整理します。</strong></p>
-  <p class="km-request"><a href="/#contact">診断について問い合わせる</a></p>
-  <hr>
-  <h2>AIを使う前も、使った後も。</h2>
-  <details>
-    <summary>まだ使っていない：何に使い、採算が合うか。</summary>
-    <p>困っている業務の実態を整理し、人・AI・プログラムでどう分担するかを検討します。必要な契約、導入・研修、運用の費用まで含め、着手する順序を決めます。</p>
-    <p>最初から全業務の資料を揃える必要はありません。まず対象業務を選び、ヒアリングと実際の資料・記録から確認します。</p>
-  </details>
-  <details>
-    <summary>すでに使っている：その契約で、何が変わったか。</summary>
-    <p>毎回の指示、転記、確認や修正に、どれだけ手間が残っているか。現在使えるAIを踏まえ、業務手順、既存サービス、外注との分担を見直します。</p>
-    <p>AIの手順は再利用できる形に整え、決まった変換・計算・集計は検証したプログラムで処理します。人は目的の設定と重要な判断を担います。</p>
-  </details>
-  <hr>
-  <details class="km-point">
-    <summary>時間が減った。それだけで黒字ですか。</summary>
-    <p>AIの利用料、導入・研修、確認・修正、保守もコストです。削減時間を人件費に換算した数字と、実際に減る支出を分け、総費用に見合うかを確認します。</p>
-    <p>以前から使っているツールや外注も比較対象です。置き換える費用と運用負担まで確認し、残すもの、見直すもの、追加で必要なものを整理します。</p>
-  </details>
-  <details class="km-point">
-    <summary>動いた。それで、安全ですか。</summary>
-    <p>自作アプリやGoogle Apps Script、AIの作業手順も対象です。誰の権限で動き、誰に公開され、どの情報を外部へ送っているかを確認します。</p>
-    <p>対象と確認方法を定め、確認結果・対応の優先順位・未確認事項を報告します。</p>
-  </details>
-  <details class="km-point">
-    <summary>判断できる資料を、経営の手元に。</summary>
-    <ol>
-      <li><strong>業務一覧表</strong>：担当・頻度・工数・使用ツールを整理します。</li>
-      <li><strong>業務フロー図</strong>：作業と情報、判断・承認の流れを示します。</li>
-      <li><strong>課題分析シート</strong>：非効率・重複・属人化や、安全性の確認結果を整理します。</li>
-      <li><strong>改善提案書</strong>：効果・総費用・実行の難しさを比較します。</li>
-      <li><strong>優先順位表・ロードマップ</strong>：着手順、担当、時期を示します。</li>
-      <li><strong>手段の比較表</strong>：AI、既存ツール、専用開発などから適切な手段を検討します。</li>
-    </ol>
-    <p>経営層・事業責任者には、目標・費用・変更できる範囲の確認にご協力いただきます。現場の実態と経営の方針を合わせて、実行計画をまとめます。</p>
-    <p>診断結果をもとに、自社で実行することも、必要な実装・研修をKunimasuへ依頼することもできます。人が必要なら、外注・採用の業務要件も整理します。</p>
-  </details>
-  <section id="km-contact" class="km-contact" aria-label="相談窓口">
-    <strong>業務が整理されていない。その段階から相談できます。</strong>
-    <p>対象業務と確認する範囲を相談し、診断内容と費用をご提案します。</p>
-    <p><a href="/#contact">お問い合わせフォームへ</a></p>
-    <p>株式会社Kunimasu　<a href="mailto:info@kunimasu.com">info@kunimasu.com</a></p>
-  </section>
-  <footer><p><a href="/">株式会社Kunimasuの会社情報</a></p></footer>
-</main>
-</body>
+    <main id="main" tabindex="-1">
+      <section class="home-hero" aria-labelledby="diagnosis-hero-title">
+        <div class="home-shell home-hero-inner diagnosis-hero">
+          <div class="home-hero-copy">
+            <p class="home-eyebrow">AI活用・業務改善診断</p>
+            <h1 id="diagnosis-hero-title"><span>御社にとって正しい</span><span>物差しを手に入れる。</span></h1>
+            <p>採用で人を増やすか、業務の見直しやAI活用で負担を減らすか。自社で進めるか、専門家の力を借りるか。事業内容・規模・経営課題に照らして業務を棚卸しし、御社が判断するための資料を納品します。</p>
+            <div class="home-actions">
+              <a class="home-button" href="../#contact">診断の相談をする</a>
+              <a class="home-button home-button-secondary" href="#deliverables">納品物を見る</a>
+            </div>
+          </div>
+          <aside class="home-card diagnosis-example" aria-labelledby="diagnosis-example-title">
+            <h2 id="diagnosis-example-title">判断の例</h2>
+            <p class="diagnosis-example-subject">見積もり対応に時間がかかる</p>
+            <dl>
+              <div><dt>確かめる</dt><dd>入力・確認・承認のうち、どこで時間がかかっているか。</dd></div>
+              <div><dt>比べる</dt><dd>手順の見直し、人員の補強、見積もりの下書きの自動化。</dd></div>
+              <div><dt>決める</dt><dd>社内で手順を変えられるか。仕組みづくりや運用に外部の力が必要か。</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="home-shell home-section" aria-labelledby="diagnosis-process-title">
+        <div class="diagnosis-section-heading">
+          <h2 id="diagnosis-process-title">御社の物差しをつくるまで</h2>
+          <p>同じ人手不足でも、事業の規模や利益への影響、現場が改善に割ける時間によって、優先すべき対応は変わります。経営側が重視する成果と、予算や人員の制約を確認し、御社の判断基準をつくります。</p>
+        </div>
+        <ol class="home-grid home-steps diagnosis-steps" role="list">
+          <li class="home-card">
+            <h3>経営課題と対象業務を決める</h3>
+            <p>売上、費用、人手、品質のどこに課題があるかを伺います。事業への影響を踏まえて、調べる業務を絞ります。</p>
+          </li>
+          <li class="home-card">
+            <h3>現場の業務を棚卸しする</h3>
+            <p>担当者への聞き取りと実際の資料・記録から、作業の手順、件数、工数、費用、確認・承認の流れを整理します。</p>
+          </li>
+          <li class="home-card">
+            <h3>選択肢を比較する</h3>
+            <p>手順の見直し、採用・外注、既存ツール、AI活用、専用システムを比べます。効果、総費用、運用を担える人、安全性を確認します。</p>
+          </li>
+        </ol>
+        <p class="diagnosis-note">すでにAIを使っている場合は、指示や確認・修正に残る手間も確認します。費用は契約や導入、研修、保守まで含め、減らせる作業時間と実際に減る支出を分けて整理します。</p>
+      </section>
+
+      <section class="home-shell home-section" id="deliverables" aria-labelledby="diagnosis-deliverables-title">
+        <div class="diagnosis-section-heading">
+          <h2 id="diagnosis-deliverables-title">納品する資料</h2>
+          <p>改善策の選び方と、実行を誰が担うかを社内で検討できるよう、調査結果と判断の根拠を資料にまとめます。</p>
+        </div>
+        <div class="home-grid home-grid-two diagnosis-documents">
+          <article class="home-card diagnosis-document">
+            <h3>業務一覧表・業務フロー図</h3>
+            <p>誰が、何を、どの頻度で行うかを整理します。担当者、工数、使用ツールと、情報や承認の流れを記載します。</p>
+          </article>
+          <article class="home-card diagnosis-document">
+            <h3>課題分析シート・改善提案書</h3>
+            <p>手戻り、重複作業、特定の人への依存など、改善が必要な箇所を示します。情報の扱いや権限を確認した結果も記載します。</p>
+          </article>
+          <article class="home-card diagnosis-document">
+            <h3>判断基準・選択肢の比較表</h3>
+            <p>どの程度の改善が必要か、いくらまで投資できるかを明記します。改善策ごとの効果、総費用、必要な人員と技能、運用負担を比較します。</p>
+          </article>
+          <article class="home-card diagnosis-document">
+            <h3>優先順位表・実行計画</h3>
+            <p>着手順、担当、時期を整理します。社内で進められる範囲と、専門家や委託先に任せる候補を具体化します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-shell home-section" aria-labelledby="diagnosis-ownership-title">
+        <div class="diagnosis-section-heading">
+          <h2 id="diagnosis-ownership-title">診断結果をもとに、進める体制を決める</h2>
+          <p>社内に確保できる人・時間・技能を踏まえて、どの業務を自社で担い、どこに外部の力を借りるかを決められます。</p>
+        </div>
+        <div class="home-grid home-grid-three diagnosis-ownership">
+          <article class="home-card diagnosis-document">
+            <h3>自社で進める</h3>
+            <p>必要な時間と技能を社内で確保できる場合は、納品した計画をもとに、担当者を決めて改善を進めます。</p>
+          </article>
+          <article class="home-card diagnosis-document">
+            <h3>専門家の伴走を受ける</h3>
+            <p>社内で改善を進めながら、初期設定、研修、効果の確認など、支援が必要な部分を専門家に相談します。</p>
+          </article>
+          <article class="home-card diagnosis-document">
+            <h3>外部に任せる</h3>
+            <p>開発・保守や一部の業務を外部に任せる場合は、依頼範囲、期待する成果、確認方法を納品資料から整理できます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-shell home-section diagnosis-contact" id="km-contact" aria-labelledby="diagnosis-contact-title">
+        <div class="home-panel diagnosis-contact-panel">
+          <div class="home-panel-copy">
+            <h2 id="diagnosis-contact-title">診断についてのご相談</h2>
+            <p>業務一覧やフロー図が手元になくてもご相談いただけます。経営課題と対象業務を伺い、調査範囲・納品物・費用をご提案します。</p>
+          </div>
+          <div class="diagnosis-contact-actions">
+            <a class="home-button" href="../#contact">お問い合わせフォームへ</a>
+            <a class="home-text-link" href="mailto:info@kunimasu.com">info@kunimasu.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <div class="home-shell home-footer-inner">
+        <div>
+          <p>株式会社Kunimasu</p>
+          <p>東京都港区浜松町2丁目2番15号 浜松町ダイヤビル2F</p>
+        </div>
+        <nav aria-label="フッターメニュー">
+          <a href="../company/">会社概要</a>
+          <a href="../contact/">お問い合わせ</a>
+          <a href="#top">ページ上部へ</a>
+        </nav>
+        <small>© 2026 Kunimasu Inc.</small>
+      </div>
+    </footer>
+  </body>
 </html>
