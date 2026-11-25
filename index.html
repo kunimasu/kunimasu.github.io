@@ -13,22 +13,24 @@
     <link rel="canonical" href="https://kunimasu.com/">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css?v=20261112-1">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home.css?v=20261125-mobile">
     <script src="home-contact.js" defer></script>
+    <script src="home-menu.js" defer></script>
   </head>
   <body class="home-page" id="top">
     <a class="skip-link" href="#main">本文へ移動</a>
     <header class="home-header">
       <div class="home-shell home-header-inner">
-        <a class="home-brand" href="#top">株式会社Kunimasu</a>
-        <nav class="home-nav" aria-label="メインメニュー">
+        <a class="home-brand" href="#top" aria-label="株式会社Kunimasu"><span class="home-brand-company">株式会社</span>Kunimasu</a>
+        <button class="home-menu-button" type="button" aria-controls="home-nav" aria-expanded="false" hidden>メニュー</button>
+        <nav class="home-nav" id="home-nav" aria-label="メインメニュー">
           <a href="#service">サービス</a>
-          <a href="#diagnosis">AI活用診断</a>
+          <a href="ai-diagnosis/">診断の詳細</a>
           <a href="#works">実績</a>
           <a href="#company">会社概要</a>
           <a href="#other">その他の事業</a>
         </nav>
-        <a class="home-button home-button-small" href="#contact">業務改善を相談する</a>
+        <a class="home-button home-button-small home-header-contact" href="#contact">お問い合わせ</a>
       </div>
     </header>
 
@@ -44,7 +46,7 @@
             </h1>
             <p>日々の業務と費用を整理し、どこから改善するかを一緒に決めます。必要に応じて、生成AIの導入からシステムの開発・運用まで支援します。</p>
             <div class="home-actions">
-              <a class="home-button" href="#diagnosis">AI活用・業務改善診断を見る</a>
+              <a class="home-button" href="ai-diagnosis/">診断の詳細を見る</a>
               <a class="home-button home-button-secondary" href="#works">実績を見る</a>
             </div>
           </div>
@@ -227,24 +229,20 @@
         </dl>
       </section>
 
-      <section class="home-shell home-section home-contact" id="contact" aria-labelledby="contact-title">
-        <div class="home-panel home-contact-panel">
-          <div class="home-panel-copy">
+      <section class="home-shell home-section home-contact" aria-labelledby="contact-title">
+        <div class="home-panel home-contact-panel" id="contact" tabindex="-1">
+          <div class="home-panel-copy home-contact-copy">
             <h2 id="contact-title">お問い合わせ</h2>
             <p>AI活用・業務改善診断、システム開発やIoTについてご相談いただけます。</p>
             <a class="home-text-link home-email" href="mailto:info@kunimasu.com">info@kunimasu.com</a>
-            <ul class="home-contact-routes">
-              <li><a href="https://hatakesupport.co.jp/">畑・遊休地のご相談</a></li>
-              <li><a href="contact/">天然石・その他のお問い合わせ</a></li>
-            </ul>
           </div>
           <form class="home-contact-form" id="contact-form" action="mailto:info@kunimasu.com" hidden>
             <label>ご用件
               <select name="topic">
-                <option>AI活用・業務改善診断の相談</option>
-                <option>業務システム・Web開発の相談</option>
-                <option>IoTシステム開発の相談</option>
-                <option>その他のお問い合わせ</option>
+                <option value="AI活用・業務改善診断の相談">AI活用・業務改善診断</option>
+                <option value="業務システム・Web開発の相談">業務システム・Web開発</option>
+                <option value="IoTシステム開発の相談">IoTシステム開発</option>
+                <option value="その他のお問い合わせ">その他</option>
               </select>
             </label>
             <label>会社名
@@ -263,6 +261,10 @@
             <button class="home-button" type="submit" aria-describedby="contact-note">メールの下書きを作成</button>
             <p class="home-form-note" id="contact-status" role="status"></p>
           </form>
+          <ul class="home-contact-routes">
+            <li><a href="https://hatakesupport.co.jp/">畑・遊休地のご相談</a></li>
+            <li><a href="contact/">天然石・その他のお問い合わせ</a></li>
+          </ul>
         </div>
       </section>
     </main>
