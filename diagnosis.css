@@ -1,29 +1,22 @@
-.diagnosis-page .home-nav a[aria-current="page"] {
+.home-diagnosis .diagnosis-statement {
   color: var(--home-accent);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
   font-weight: 700;
-  text-decoration: underline;
+  line-height: 1.45;
+  text-wrap: balance;
 }
 
-.diagnosis-hero {
-  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
-}
-
-.diagnosis-hero .home-eyebrow {
-  color: var(--home-accent);
-  font-weight: 700;
-}
-
-.diagnosis-hero .home-hero-copy > p:not(.home-eyebrow) {
-  max-width: 34em;
+.diagnosis-statement span {
+  display: inline-block;
 }
 
 .diagnosis-example {
   border-color: #d4e1f8;
-  padding: clamp(20px, 3vw, 30px);
+  padding: clamp(16px, 3vw, 28px);
   background: var(--home-accent-tint);
 }
 
-.diagnosis-example h2 {
+.diagnosis-example h3 {
   color: var(--home-accent);
   font-size: 0.9375rem;
 }
@@ -64,10 +57,20 @@
   color: var(--home-copy);
 }
 
+.diagnosis-details {
+  display: grid;
+  gap: clamp(36px, 5vw, 56px);
+  margin-top: clamp(36px, 5vw, 56px);
+}
+
 .diagnosis-section-heading {
   display: grid;
-  gap: 12px;
-  margin-bottom: 26px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.diagnosis-section-heading h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 .diagnosis-section-heading p {
@@ -85,10 +88,11 @@
   padding: 24px;
 }
 
-.diagnosis-steps h3,
-.diagnosis-document h3 {
-  margin-bottom: 8px;
+.diagnosis-steps h4,
+.diagnosis-document h4 {
+  margin: 0 0 8px;
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 .diagnosis-steps p,
@@ -105,50 +109,37 @@
   color: var(--home-copy);
 }
 
-.diagnosis-contact {
-  padding-bottom: var(--home-section-gap);
-}
-
 .diagnosis-contact-panel {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  border: 2px solid var(--home-accent);
-}
-
-.diagnosis-contact-actions {
-  display: grid;
-  justify-items: center;
-  gap: 12px;
-}
-
-.diagnosis-contact-actions .home-text-link {
-  overflow-wrap: anywhere;
 }
 
 @media (max-width: 740px) {
-  .diagnosis-hero,
+  .home-diagnosis {
+    scroll-margin-top: 44px;
+  }
+
   .diagnosis-steps,
   .diagnosis-documents,
   .diagnosis-contact-panel {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .diagnosis-section-heading {
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-
   .diagnosis-steps li,
   .diagnosis-document {
     padding: 20px;
   }
-
-  .diagnosis-contact-actions > .home-button {
-    justify-self: stretch;
-  }
 }
 
 @media (max-width: 480px) {
+  .home-diagnosis h2 {
+    font-size: 1.25rem;
+  }
+
+  .diagnosis-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .diagnosis-example-subject {
     font-size: 1rem;
   }

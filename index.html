@@ -13,7 +13,8 @@
     <link rel="canonical" href="https://kunimasu.com/">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css?v=20261112-1">
-    <link rel="stylesheet" href="home.css?v=20261125-mobile">
+    <link rel="stylesheet" href="home.css?v=20261125-single">
+    <link rel="stylesheet" href="diagnosis.css">
     <script src="home-contact.js" defer></script>
     <script src="home-menu.js" defer></script>
   </head>
@@ -25,7 +26,7 @@
         <button class="home-menu-button" type="button" aria-controls="home-nav" aria-expanded="false" hidden>メニュー</button>
         <nav class="home-nav" id="home-nav" aria-label="メインメニュー">
           <a href="#service">サービス</a>
-          <a href="ai-diagnosis/">診断の詳細</a>
+          <a href="#diagnosis">診断の詳細</a>
           <a href="#works">実績</a>
           <a href="#company">会社概要</a>
           <a href="#other">その他の事業</a>
@@ -46,7 +47,7 @@
             </h1>
             <p>日々の業務と費用を整理し、どこから改善するかを一緒に決めます。必要に応じて、生成AIの導入からシステムの開発・運用まで支援します。</p>
             <div class="home-actions">
-              <a class="home-button" href="ai-diagnosis/">診断の詳細を見る</a>
+              <a class="home-button" href="#diagnosis">診断の詳細を見る</a>
               <a class="home-button home-button-secondary" href="#works">実績を見る</a>
             </div>
           </div>
@@ -96,23 +97,103 @@
         </div>
       </section>
 
-      <section class="home-shell home-section" id="diagnosis" aria-labelledby="diagnosis-title">
-        <div class="home-panel home-diagnosis">
+      <section class="home-shell home-section" aria-labelledby="diagnosis-title">
+        <div class="home-panel home-diagnosis" id="diagnosis" tabindex="-1">
           <div class="home-panel-copy">
             <h2 id="diagnosis-title">AI活用・業務改善診断</h2>
-            <p>担当者への聞き取りと業務資料をもとに、作業の流れ、工数、費用を整理します。既存ツールの活用、生成AI、専用システムの開発などを比べ、改善の着手順を提案します。</p>
-            <p>対象業務と確認する範囲を伺ったうえで、診断内容と費用をご提案します。</p>
-          </div>
-          <div class="home-diagnosis-aside">
-            <div class="home-diagnosis-output">
-              <h3>診断でお渡しする資料の例</h3>
-              <ul>
-                <li>業務一覧表・業務フロー図</li>
-                <li>課題分析・改善提案書</li>
-                <li>改善策の比較表・着手順</li>
-              </ul>
+            <p class="diagnosis-statement"><span>御社にとって正しい</span><wbr><span>物差しを手に入れる。</span></p>
+            <p>採用で人を増やすか、業務の見直しやAI活用で負担を減らすか。自社で進めるか、専門家の力を借りるか。事業内容・規模・経営課題に照らして業務を棚卸しし、御社が判断するための資料を納品します。</p>
+            <div class="home-actions diagnosis-actions">
+              <a class="home-button" href="#contact">診断の相談をする</a>
+              <a class="home-button home-button-secondary" href="#deliverables">納品物を見る</a>
             </div>
-            <a class="home-button" href="ai-diagnosis/">診断の詳細・相談窓口へ</a>
+          </div>
+          <aside class="home-card diagnosis-example" aria-labelledby="diagnosis-example-title">
+            <h3 id="diagnosis-example-title">判断の例</h3>
+            <p class="diagnosis-example-subject">見積もり対応に時間がかかる</p>
+            <dl>
+              <div><dt>確かめる</dt><dd>入力・確認・承認のうち、どこで時間がかかっているか。</dd></div>
+              <div><dt>比べる</dt><dd>手順の見直し、人員の補強、見積もりの下書きの自動化。</dd></div>
+              <div><dt>決める</dt><dd>社内で手順を変えられるか。仕組みづくりや運用に外部の力が必要か。</dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="diagnosis-details">
+          <section aria-labelledby="diagnosis-process-title">
+            <div class="diagnosis-section-heading">
+              <h3 id="diagnosis-process-title">御社の物差しをつくるまで</h3>
+              <p>同じ人手不足でも、事業の規模や利益への影響、現場が改善に割ける時間によって、優先すべき対応は変わります。経営側が重視する成果と、予算や人員の制約を確認し、御社の判断基準をつくります。</p>
+            </div>
+            <ol class="home-grid home-steps diagnosis-steps" role="list">
+              <li class="home-card">
+                <h4>経営課題と対象業務を決める</h4>
+                <p>売上、費用、人手、品質のどこに課題があるかを伺います。事業への影響を踏まえて、調べる業務を絞ります。</p>
+              </li>
+              <li class="home-card">
+                <h4>現場の業務を棚卸しする</h4>
+                <p>担当者への聞き取りと実際の資料・記録から、作業の手順、件数、工数、費用、確認・承認の流れを整理します。</p>
+              </li>
+              <li class="home-card">
+                <h4>選択肢を比較する</h4>
+                <p>手順の見直し、採用・外注、既存ツール、AI活用、専用システムを比べます。効果、総費用、運用を担える人、安全性を確認します。</p>
+              </li>
+            </ol>
+            <p class="diagnosis-note">すでにAIを使っている場合は、指示や確認・修正に残る手間も確認します。費用は契約や導入、研修、保守まで含め、減らせる作業時間と実際に減る支出を分けて整理します。</p>
+          </section>
+
+          <section id="deliverables" aria-labelledby="diagnosis-deliverables-title">
+            <div class="diagnosis-section-heading">
+              <h3 id="diagnosis-deliverables-title">納品する資料</h3>
+              <p>改善策の選び方と、実行を誰が担うかを社内で検討できるよう、調査結果と判断の根拠を資料にまとめます。</p>
+            </div>
+            <div class="home-grid home-grid-two diagnosis-documents">
+              <article class="home-card diagnosis-document">
+                <h4>業務一覧表・業務フロー図</h4>
+                <p>誰が、何を、どの頻度で行うかを整理します。担当者、工数、使用ツールと、情報や承認の流れを記載します。</p>
+              </article>
+              <article class="home-card diagnosis-document">
+                <h4>課題分析シート・改善提案書</h4>
+                <p>手戻り、重複作業、特定の人への依存など、改善が必要な箇所を示します。情報の扱いや権限を確認した結果も記載します。</p>
+              </article>
+              <article class="home-card diagnosis-document">
+                <h4>判断基準・選択肢の比較表</h4>
+                <p>どの程度の改善が必要か、いくらまで投資できるかを明記します。改善策ごとの効果、総費用、必要な人員と技能、運用負担を比較します。</p>
+              </article>
+              <article class="home-card diagnosis-document">
+                <h4>優先順位表・実行計画</h4>
+                <p>着手順、担当、時期を整理します。社内で進められる範囲と、専門家や委託先に任せる候補を具体化します。</p>
+              </article>
+            </div>
+          </section>
+
+          <section aria-labelledby="diagnosis-ownership-title">
+            <div class="diagnosis-section-heading">
+              <h3 id="diagnosis-ownership-title">診断結果をもとに、進める体制を決める</h3>
+              <p>社内に確保できる人・時間・技能を踏まえて、どの業務を自社で担い、どこに外部の力を借りるかを決められます。</p>
+            </div>
+            <div class="home-grid home-grid-three">
+              <article class="home-card diagnosis-document">
+                <h4>自社で進める</h4>
+                <p>必要な時間と技能を社内で確保できる場合は、納品した計画をもとに、担当者を決めて改善を進めます。</p>
+              </article>
+              <article class="home-card diagnosis-document">
+                <h4>専門家の伴走を受ける</h4>
+                <p>社内で改善を進めながら、初期設定、研修、効果の確認など、支援が必要な部分を専門家に相談します。</p>
+              </article>
+              <article class="home-card diagnosis-document">
+                <h4>外部に任せる</h4>
+                <p>開発・保守や一部の業務を外部に任せる場合は、依頼範囲、期待する成果、確認方法を納品資料から整理できます。</p>
+              </article>
+            </div>
+          </section>
+
+          <div class="home-panel diagnosis-contact-panel">
+            <div class="home-panel-copy">
+              <h3>診断についてのご相談</h3>
+              <p>業務一覧やフロー図が手元になくてもご相談いただけます。経営課題と対象業務を伺い、調査範囲・納品物・費用をご提案します。</p>
+            </div>
+            <a class="home-button" href="#contact">お問い合わせフォームへ</a>
           </div>
         </div>
       </section>
@@ -213,7 +294,7 @@
             <div>
               <h3>天然石</h3>
               <p>天然石の物販を行っています。</p>
-              <a class="home-text-link" href="contact/">天然石のお問い合わせ</a>
+              <a class="home-text-link" href="https://picgem.kunimasu.com/">天然石のお問い合わせ</a>
             </div>
           </article>
         </div>
@@ -263,7 +344,7 @@
           </form>
           <ul class="home-contact-routes">
             <li><a href="https://hatakesupport.co.jp/">畑・遊休地のご相談</a></li>
-            <li><a href="contact/">天然石・その他のお問い合わせ</a></li>
+            <li><a href="https://picgem.kunimasu.com/">天然石・その他のお問い合わせ</a></li>
           </ul>
         </div>
       </section>
@@ -276,8 +357,8 @@
           <p>東京都港区浜松町2丁目2番15号 浜松町ダイヤビル2F</p>
         </div>
         <nav aria-label="フッターメニュー">
-          <a href="company/">会社概要</a>
-          <a href="contact/">お問い合わせ</a>
+          <a href="#company">会社概要</a>
+          <a href="#contact">お問い合わせ</a>
           <a href="#top">ページ上部へ</a>
         </nav>
         <small>© 2026 Kunimasu Inc.</small>

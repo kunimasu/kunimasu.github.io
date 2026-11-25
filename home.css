@@ -344,24 +344,6 @@
   border: 2px solid var(--home-accent);
 }
 
-.home-diagnosis-aside {
-  display: grid;
-  gap: 12px;
-}
-
-.home-diagnosis-output {
-  border-radius: 8px;
-  padding: 20px;
-  background: var(--home-accent-tint);
-}
-
-.home-diagnosis-output ul {
-  margin: 8px 0 0;
-  padding-left: 1.25em;
-  color: var(--home-copy);
-  font-size: 0.9375rem;
-}
-
 .home-case {
   overflow: hidden;
 }
