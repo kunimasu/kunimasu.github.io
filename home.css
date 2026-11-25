@@ -258,6 +258,10 @@
   gap: 16px;
 }
 
+.home-service-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .home-card,
 .home-concerns li {
   border: 1px solid var(--home-line);
@@ -612,6 +616,12 @@
   outline-color: var(--home-white);
 }
 
+@media (max-width: 1024px) {
+  .home-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 960px) {
   .home-page {
     --home-section-gap: 68px;
@@ -743,6 +753,7 @@
   .home-hero-inner,
   .home-panel,
   .home-grid-three,
+  .home-service-grid,
   .home-profile {
     grid-template-columns: minmax(0, 1fr);
   }
