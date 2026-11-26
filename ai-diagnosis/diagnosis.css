@@ -88,8 +88,15 @@
 }
 
 .diagnosis-section-heading p {
-  max-width: 44em;
   color: var(--home-copy);
+  text-wrap: balance;
+  word-break: auto-phrase;
+}
+
+@media (min-width: 960px) {
+  .diagnosis-section-heading p > span {
+    display: block;
+  }
 }
 
 .diagnosis-steps {
